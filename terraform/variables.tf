@@ -12,8 +12,3 @@ variable "instance_type" {
   type    = "string"
   default = "n1-standard-1"
 }
-
-variable "kubernetes_version" {
-  type    = "string"
-  default = "1.10.7-gke.1"
-}
