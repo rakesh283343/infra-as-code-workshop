@@ -137,7 +137,7 @@ necessary configurations to be able to communicate with Google Cloud.
     $ terraform apply
     ```
 
-    ```text    
+    ```text
     Plan: 1 to add, 0 to change, 0 to destroy.
     Do you want to perform these actions?
       Terraform will perform the actions described above.
@@ -332,7 +332,8 @@ instructs Terraform to create a public IP address.
 
     ```hcl
     resource "google_compute_address" "default" {
-      name = "my-address"
+      name   = "my-address"
+      region = var.region
     }
     ```
 
@@ -391,8 +392,8 @@ optional.
 ## License
 
 ```text
-Copyright 2018 Seth Vargo
-Copyright 2018 Google, Inc.
+Copyright 2018-2020 Seth Vargo
+Copyright 2018-2020 Google, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

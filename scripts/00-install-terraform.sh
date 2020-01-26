@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-set -e
-set -o pipefail
+set -eEuo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." &>/dev/null && pwd)"
 
 NAME="terraform"
-VERSION="0.11.8"
+VERSION="0.12.20"
 BUCKET="${GOOGLE_CLOUD_PROJECT}-terraform-state"
 
 echo "--> Installing terraform"

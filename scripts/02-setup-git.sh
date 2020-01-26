@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-set -e
-set -o pipefail
+set -eEuo pipefail
 
 if [ ! -f "${HOME}/.gitconfig" ]; then
   echo ""

@@ -1,14 +1,9 @@
 variable "region" {
-  type    = "string"
-  default = "asia-northeast1"
-}
-
-variable "zone" {
-  type    = "string"
-  default = "asia-northeast1-b"
+  type    = string
+  default = "us-east1"
 }
 
 variable "instance_type" {
-  type    = "string"
+  type    = string
   default = "n1-standard-1"
 }

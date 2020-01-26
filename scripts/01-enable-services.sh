@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-set -e
-set -o pipefail
+set -eEuo pipefail
 
 gcloud --quiet services enable --async \
   cloudapis.googleapis.com \
