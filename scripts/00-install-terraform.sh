@@ -2,7 +2,7 @@
 set -eEuo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." &>/dev/null && pwd)"
-
+GOOGLE_CLOUD_PROJECT=mlopslabs
 NAME="terraform"
 VERSION="0.12.20"
 BUCKET="${GOOGLE_CLOUD_PROJECT}-terraform-state"

@@ -23,3 +23,7 @@ resource "google_container_cluster" "my-cluster" {
     machine_type = var.instance_type
   }
 }
+resource "google_compute_address" "default" {
+  name   = "my-address"
+  region = var.region
+}
